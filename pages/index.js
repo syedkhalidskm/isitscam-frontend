@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { Geist, Geist_Mono } from "next/font/google";
 import styles from "@/styles/Home.module.css";
+import UploadForm from "./UploadForm"; // Correct path to UploadForm.js in the same folder
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -67,6 +68,10 @@ export default function Home() {
             </a>
           </div>
         </main>
+
+        {/* Add the UploadForm here */}
+        <UploadForm /> {/* This is the form to upload an image and check if it's a scam */}
+
         <footer className={styles.footer}>
           <a
             href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
@@ -115,3 +120,4 @@ export default function Home() {
     </>
   );
 }
+
