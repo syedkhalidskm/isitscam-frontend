@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { Geist, Geist_Mono } from "next/font/google";
 import styles from "@/styles/Home.module.css";
-import UploadForm from "./UploadForm"; // Correct path to UploadForm.js in the same folder
+import UploadForm from "./uploadform"; // Correct path to UploadForm.js in the same folder
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
